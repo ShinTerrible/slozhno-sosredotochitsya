@@ -14,4 +14,6 @@
     --article-title-bacground: #ff0070;
     --accent-color-text: #f1b2ce;
     --accent-background-image: url(../images/cover-image-dark.png);
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --title-font-size_tablet:  clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
