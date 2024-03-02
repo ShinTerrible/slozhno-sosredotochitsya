@@ -261,6 +261,10 @@
 }
 
 @media (width >= 768px) {
+    :root {
+        --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    }
+
     .decorated-zone:before {
         top: 20px;
         right: 20px;
@@ -399,7 +403,9 @@
 
 @media (width >= 1024px) {
     .header_decoration__item {
-        margin-block-start: -65px;
+        position: absolute;
+        top: 120px;
+        right: 20px;
     }
 
     .header {
