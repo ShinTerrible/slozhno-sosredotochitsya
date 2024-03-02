@@ -156,6 +156,7 @@
     text-shadow: 4px 4px 0 var(--accent-color-header_shadow);
     justify-items: center;
 }
+
 .header .main_title {
     padding-block-start: 20px;
 }
