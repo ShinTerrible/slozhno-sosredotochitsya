@@ -261,10 +261,6 @@
 }
 
 @media (width >= 768px) {
-    :root {
-        --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-    }
-
     .decorated-zone:before {
         top: 20px;
         right: 20px;
@@ -293,6 +289,10 @@
         padding-block-end: 130px;
         padding-block-start: 70px;
         margin-block-end: 45px;
+    }
+
+    .main_title {
+        font-size: var(--title-font-size);
     }
 
     .header .main_title {
@@ -402,6 +402,10 @@
 }
 
 @media (width >= 1024px) {
+    :root {
+        --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    }
+
     .header_decoration__item {
         position: absolute;
         top: 120px;
@@ -432,7 +436,7 @@
     }
 
     .main_title {
-        font-size: var(--title-font-size_tablet);
+        font-size: var(--title-font-size);
         padding-block-start: 0px;
     }
 
