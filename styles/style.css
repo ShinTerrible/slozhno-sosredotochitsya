@@ -78,17 +78,20 @@
 .header__theme-menu-button_active {
     outline: 1px solid var(--menu-theme-button);
     outline-offset: 2px;
-    pointer-events: none;
+    pointer-events: none; /*курсор не меняет состояние на активной кнопке*/
 }
 
 .header__theme-menu-button:hover {
     outline: 1px solid var(--menu-theme-button);
     outline-offset: 2px;
-    cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
     border-block-end: 1px solid var(--menu-theme-button);
+    outline: none;
+}
+
+.header__theme-menu-button:focus {
     outline: none;
 }
 
@@ -132,10 +135,6 @@
 }
 
 .header__theme-menu-button {
-    margin-inline-end: 7px;
-}
-
-.header__theme-menu-button {
     color: var(--menu-theme-button);
     background-color: transparent;
     border: transparent;
@@ -143,6 +142,9 @@
     font-family: inherit;
     font-size: 18px;
     line-height: 18px;
+    margin-inline-end: 7px;
+    cursor: pointer;
+    appearance: none;
 }
 
 .main_title {
