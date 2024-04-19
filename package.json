@@ -1,0 +1,46 @@
+{
+    "name": "slozhno-sosredotochitsya_gulp",
+    "version": "1.0.0",
+    "description": "gulp project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo: Hello!",
+        "check": "prettier --check './src/**/*.{html,css,js}'",
+        "format": "prettier --write './src/**/*.{html,css,js}'",
+        "lint": "stylelint './src/**/*.css'",
+        "lintfix": "stylelint './src/**/*.css' --fix",
+        "checkAll": "npm run check && npm run lint",
+        "fixAll": "npm run format && npm run lintfix",
+        "build": "gulp build",
+        "dev": "gulp",
+        "fixAndBuild": "npm run fixAll && npm run build",
+        "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'подготовили к публикации' && git push"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ShinTerrible/slozhno-sosredotochitsya.git"
+    },
+    "author": "Christina",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ShinTerrible/slozhno-sosredotochitsya/issues"
+    },
+    "homepage": "https://github.com/ShinTerrible/slozhno-sosredotochitsya#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "browser-sync": "^3.0.2",
+        "cssnano": "^6.1.2",
+        "del": "^6.0.0",
+        "gulp": "^5.0.0",
+        "gulp-concat-css": "^3.1.0",
+        "gulp-js-deps": "^0.2.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^10.0.0",
+        "gulp-pug": "^5.0.0",
+        "html-minifier": "^4.0.0",
+        "postcss": "^8.4.38",
+        "postcss-combine-media-query": "^1.0.1",
+        "prettier": "^3.2.5",
+        "stylelint": "^16.3.1"
+    }
+}
